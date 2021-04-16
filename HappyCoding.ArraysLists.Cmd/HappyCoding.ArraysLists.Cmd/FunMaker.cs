@@ -33,6 +33,30 @@ namespace HappyCoding.ArraysLists.Cmd
             return numbers;
         }
 
+        /// <summary>
+        /// Sumsthe even numbers of an existing array.
+        /// </summary>
+        /// <returns>Sum ofEven Numbers</returns>
+        internal int[] SumEvenNumbers()
+        {
+            int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            Console.WriteLine("Numbers: " + string.Join(',',numbers));
+
+            int sum = 0;
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] % 2 == 0)
+                {
+                    sum += numbers[i];
+                }
+            }
+
+            Console.WriteLine("Sum even numbers: " + sum);
+            return numbers;
+        }
+
+
+
         internal static void Fun()
         {
             var funMaker = new FunMaker();
