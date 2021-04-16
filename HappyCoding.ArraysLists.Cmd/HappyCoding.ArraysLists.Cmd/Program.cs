@@ -6,15 +6,24 @@ namespace HappyCoding.ArraysLists.Cmd
     {
         static void Main(string[] args)
         {
-            Sample.ListSample();
+            Console.WriteLine("Input:");
+            var text = Console.ReadLine();
+            CharacterCounter characterCounter = new CharacterCounter();
+            characterCounter.CalculateCharacters(text);
+            characterCounter.Print();
 
-            Console.WriteLine();
+            //FunMaker funMaker = new();
+            //funMaker.SumEvenNumbers();
 
-            Sample.DictionarySample();
+            //Sample.ListSample();
 
-            Console.WriteLine();
+            //Console.WriteLine();
 
-            FunMaker.Fun();
+            //Sample.DictionarySample();
+
+            //Console.WriteLine();
+
+            //FunMaker.Fun();
 
 
             Console.ReadLine();
