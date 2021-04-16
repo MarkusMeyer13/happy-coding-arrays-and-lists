@@ -12,6 +12,11 @@ namespace HappyCoding.ArraysLists.Cmd
 
             Sample.DictionarySample();
 
+            Console.WriteLine();
+
+            FunMaker.Fun();
+
+
             Console.ReadLine();
         }
     }
